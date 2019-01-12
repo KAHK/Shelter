@@ -1,8 +1,8 @@
-import java.util.Date;
+package shelter;
 
 public class OtherAnimal extends Animal {
     private String species;
-    public OtherAnimal(Integer ID, String name,  String species, String adoptionStatus, Integer age, Boolean sex,
+    public OtherAnimal(Integer ID, String name,  String species, String adoptionStatus, Integer age, String sex,
                        String admissionDate, String other) {
         super(ID, name, adoptionStatus, age, sex, admissionDate, other);
     }

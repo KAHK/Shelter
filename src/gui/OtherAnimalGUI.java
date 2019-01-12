@@ -1,30 +1,27 @@
+package gui;
+
 import javax.swing.*;
 
-public class DogGUI {
+public class OtherAnimalGUI {
     private JTextField nameTextField;
+    private JTextField speciesTextField;
     private JComboBox adoptionComboBox;
     private JTextField ageTextField;
-    private JTextField breedTextField;
-    private JTextField otherTextField;
+    private JRadioButton maleRadioButton;
     private JTextField admDateTextField;
-    private JRadioButton yesRadioButton;
-    private JComboBox sizeComboBox;
+    private JTextField otherTextField;
+    private JRadioButton femaleRadioButton;
     private JButton removeAccountButton;
     private JButton saveChangesButton;
     private JButton goBackButton;
-    private JRadioButton noRadioButton;
-    private JRadioButton femaleRadioButton;
-    private JRadioButton maleRadioButton;
-    private JLabel dogLabel;
+    private JLabel otherAnimalLabel;
     private JLabel idLabel;
     private JLabel animalIDLabel;
     private JLabel nameLabel;
+    private JLabel speciesLabel;
     private JLabel adoptionStatusLabel;
     private JLabel ageLabel;
     private JLabel sexLabel;
-    private JLabel sizeLabel;
-    private JLabel breedLabel;
-    private JLabel sterilizatedLabel;
     private JLabel admissionDateLabel;
     private JLabel otherLabel;
 }

@@ -1,16 +1,20 @@
-import java.util.Date;
+package shelter;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public /*abstract*/ class Animal {
     private Integer ID;
     private String name;
     private String adoptionStatus;
     private Integer age;
-    private Boolean sex; //boolean?
+    private String sex; //boolean?
     private /*Date*/ String admissionDate;
     private String other; //room to place another important info like treatment
     //private Date adoptionDate;?
+    public List<Animal> animalsList = new ArrayList<>();
 
-
-    public Animal(Integer ID, String name, String adoptionStatus, Integer age, Boolean sex, String admissionDate,
+    public Animal(Integer ID, String name, String adoptionStatus, Integer age, String sex, String admissionDate,
                   String other) {
         this.ID = ID;
         this.name = name;
@@ -53,13 +57,11 @@ public /*abstract*/ class Animal {
         this.age = age;
     }
 
-    public Boolean getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Boolean sex) {
-        this.sex = sex;
-    }
+    public void setSex(String sex) { this.sex = sex; }
 
     public String getAdmissionDate() {
         return admissionDate;
@@ -79,7 +81,7 @@ public /*abstract*/ class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "shelter.Animal{" +
                 "ID=" + ID +
                 ", name='" + name + '\'' +
                 ", adoptionStatus='" + adoptionStatus + '\'' +
