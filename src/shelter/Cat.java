@@ -1,5 +1,9 @@
 package shelter;
 
+import gui.CatGUI;
+
+import javax.swing.*;
+
 public class Cat extends Animal {
 
     private Boolean isSterilizated;
@@ -23,5 +27,9 @@ public class Cat extends Animal {
 
     public void setBreed(String breed) {
         this.breed = breed;
+    }
+
+    public JPanel getCustomPanel() {
+        return new CatGUI().catPanel;
     }
 }

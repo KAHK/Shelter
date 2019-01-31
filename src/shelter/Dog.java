@@ -1,5 +1,9 @@
 package shelter;
 
+import gui.DogGUI;
+
+import javax.swing.*;
+
 public class Dog extends Animal {
     private String size;
     private Boolean isSterilizated;
@@ -32,4 +36,9 @@ public class Dog extends Animal {
     public void setBreed(String breed) {
         this.breed = breed;
     }
+
+    public JPanel getCustomPanel() {
+        return new DogGUI().dogPanel;
+    }
+
 }

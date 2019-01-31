@@ -3,9 +3,10 @@ package gui;
 import javax.swing.*;
 
 public class MainScreenGUI {
-    private JButton closeButton;
-    private JButton animalsButton;
-    private JButton instructionButton;
-    private JButton adoptedButton;
-    private JLabel menuLabel;
+    protected JPanel mainPanel;
+    protected JButton closeButton;
+    protected JButton animalsButton;
+    protected JButton instructionButton;
+    protected JButton adoptedButton;
+    protected JLabel menuLabel;
 }

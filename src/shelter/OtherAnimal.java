@@ -1,5 +1,9 @@
 package shelter;
 
+import gui.OtherAnimalGUI;
+
+import javax.swing.*;
+
 public class OtherAnimal extends Animal {
     private String species;
     public OtherAnimal(Integer ID, String name,  String species, String adoptionStatus, Integer age, String sex,
@@ -13,5 +17,9 @@ public class OtherAnimal extends Animal {
 
     public void setSpecies(String species) {
         this.species = species;
+    }
+
+    public JPanel getCustomPanel() {
+        return new OtherAnimalGUI().otherPanel;
     }
 }

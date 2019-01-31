@@ -1,5 +1,6 @@
 package shelter;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -93,6 +94,10 @@ public /*abstract*/ class Animal {
     }
     public Integer getAnimalID() {
         return ID;
+    }
+
+    public JPanel getCustomPanel() {
+        return null;
     }
 }
 

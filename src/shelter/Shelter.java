@@ -7,6 +7,16 @@ public class Shelter {
     public List<Animal> animalsList = new ArrayList<>();
     private Integer lastAnID = 1;
 
+    public List<Animal> getAnimalsList() {
+        return animalsList;
+    }
+
+    public Animal getAnimalById(int animalID) {
+        int index = findAnimalId(animalID);
+        Animal animal = (index!=-1) ? animalsList.get(index) : null;
+        return animal;
+    }
+
     public Dog newDog(String name, String adoptionStatus, Integer age, String sex, String size, String breed,
                       Boolean isSterilizated, String admissionDate, String other) {
         Dog dog = new Dog(lastAnID++, name, adoptionStatus, age, sex, size, breed, isSterilizated, admissionDate, other);
@@ -28,7 +38,7 @@ public class Shelter {
 
 
 
-    private int findAnimalId(Integer animalID) {
+    public int findAnimalId(Integer animalID) {
         for (Animal animal : animalsList) {
             if (animal.getAnimalID().equals(animalID))
                 return animalsList.indexOf(animal);
