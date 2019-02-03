@@ -1,5 +1,5 @@
-"Animals" button - displays accounts of animals.If there is no animals you will receive a message saying so.
-You can move between animals accounts by using next (">") and previous ("<") buttons and remove animal from the list by clicking "Remove Animal" button. You can also go back to the main menu by clicking "Go Back" button.
-"Add new" button - If there is no animals and you want to add some. press "Animals" button with right mouse button and choose the type of the animal that you want to add. You will receive a form to fill with data on the animal. When the form is filled click "Save changes" button to save the account and go back to main menu.
+"Animals" button - displays accounts of animals. If there is no animals you will receive a message saying so.
+You can move between animals accounts by using next (">") and previous ("<") buttons, edit data (and save by "Save changes") or remove animal from the list by clicking "Remove Animal" button. You can also go back to the main menu by clicking "Go Back" button.
+"Add new" button - If there is no animals and you want to add some, press "Animals" button with right mouse button and choose the type of the animal that you want to add. You will receive a form to fill with data on the animal. When the form is filled click "Save changes" button to save the account and go back to main menu.
 "Instruction" button - opens the instruction.
 "Close"  button - closes the application.
