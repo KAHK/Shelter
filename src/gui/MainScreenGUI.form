@@ -43,7 +43,7 @@
           <text value="Instruction"/>
         </properties>
       </component>
-      <component id="4458a" class="javax.swing.JButton" binding="adoptedButton" default-binding="true">
+      <component id="4458a" class="javax.swing.JButton" binding="addNewButton">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -51,7 +51,7 @@
           <background color="-1379793"/>
           <font size="20" style="1"/>
           <horizontalTextPosition value="0"/>
-          <text value="Adopted"/>
+          <text value="Add new"/>
         </properties>
       </component>
       <component id="de9e7" class="javax.swing.JLabel" binding="menuLabel">

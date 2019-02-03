@@ -1,16 +1,17 @@
 package shelter;
 
-import gui.DogGUI;
-
-import javax.swing.*;
+import java.util.Date;
 
 public class Dog extends Animal {
     private String size;
     private Boolean isSterilizated;
     private String breed;
-    public Dog(Integer ID, String name, String adoptionStatus, Integer age, String sex, String size, String breed,
-               Boolean isSterilizated, String admissionDate, String other) {
+    public Dog(Integer ID, String name, String adoptionStatus, Integer age, Boolean sex, String size, String breed,
+               Boolean isSterilizated, Date admissionDate, String other) {
         super(ID, name, adoptionStatus, age, sex, admissionDate, other);
+        setSize(size);
+        setBreed(breed);
+        setSterilizated(isSterilizated);
     }
 
     public String getSize() {
@@ -37,8 +38,6 @@ public class Dog extends Animal {
         this.breed = breed;
     }
 
-    public JPanel getCustomPanel() {
-        return new DogGUI().dogPanel;
-    }
+    public String getClassIdentifier() { return "Dog"; }
 
 }

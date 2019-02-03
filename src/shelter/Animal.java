@@ -1,21 +1,20 @@
 package shelter;
 
-import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public /*abstract*/ class Animal {
+public abstract class Animal {
     private Integer ID;
     private String name;
     private String adoptionStatus;
     private Integer age;
-    private String sex; //boolean?
-    private /*Date*/ String admissionDate;
-    private String other; //room to place another important info like treatment
-    //private Date adoptionDate;?
+    private Boolean sex;
+    private Date admissionDate;
+    private String other;
     public List<Animal> animalsList = new ArrayList<>();
 
-    public Animal(Integer ID, String name, String adoptionStatus, Integer age, String sex, String admissionDate,
+    public Animal(Integer ID, String name, String adoptionStatus, Integer age, Boolean sex, Date admissionDate,
                   String other) {
         this.ID = ID;
         this.name = name;
@@ -58,17 +57,17 @@ public /*abstract*/ class Animal {
         this.age = age;
     }
 
-    public String getSex() {
+    public Boolean getSex() {
         return sex;
     }
 
-    public void setSex(String sex) { this.sex = sex; }
+    public void setSex(Boolean sex) { this.sex = sex; }
 
-    public String getAdmissionDate() {
+    public Date getAdmissionDate() {
         return admissionDate;
     }
 
-    public void setAdmissionDate(String admissionDate) {
+    public void setAdmissionDate(Date admissionDate) {
         this.admissionDate = admissionDate;
     }
 
@@ -82,7 +81,7 @@ public /*abstract*/ class Animal {
 
     @Override
     public String toString() {
-        return "shelter.Animal{" +
+        return "\nshelter.Animal{" +
                 "ID=" + ID +
                 ", name='" + name + '\'' +
                 ", adoptionStatus='" + adoptionStatus + '\'' +
@@ -96,8 +95,6 @@ public /*abstract*/ class Animal {
         return ID;
     }
 
-    public JPanel getCustomPanel() {
-        return null;
-    }
+    public String getClassIdentifier() { return "Animal"; }
 }
 

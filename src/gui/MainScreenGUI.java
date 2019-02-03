@@ -7,6 +7,6 @@ public class MainScreenGUI {
     protected JButton closeButton;
     protected JButton animalsButton;
     protected JButton instructionButton;
-    protected JButton adoptedButton;
+    protected JButton addNewButton;
     protected JLabel menuLabel;
 }

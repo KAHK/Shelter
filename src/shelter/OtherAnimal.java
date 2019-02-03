@@ -1,13 +1,11 @@
 package shelter;
 
-import gui.OtherAnimalGUI;
-
-import javax.swing.*;
+import java.util.Date;
 
 public class OtherAnimal extends Animal {
     private String species;
-    public OtherAnimal(Integer ID, String name,  String species, String adoptionStatus, Integer age, String sex,
-                       String admissionDate, String other) {
+    public OtherAnimal(Integer ID, String name, String species, String adoptionStatus, Integer age, Boolean sex,
+                       Date admissionDate, String other) {
         super(ID, name, adoptionStatus, age, sex, admissionDate, other);
     }
 
@@ -19,7 +17,5 @@ public class OtherAnimal extends Animal {
         this.species = species;
     }
 
-    public JPanel getCustomPanel() {
-        return new OtherAnimalGUI().otherPanel;
-    }
+    public String getClassIdentifier() { return "OtherAnimal"; }
 }

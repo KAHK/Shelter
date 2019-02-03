@@ -2,12 +2,12 @@ package gui;
 
 import javax.swing.*;
 
-public class CatGUI extends BaseAnimalGUI {
-    protected JTextField breedTextField;
-    protected JRadioButton yesRadioButton;
-    protected JRadioButton noRadioButton;
-    protected JLabel breedLabel;
-    protected JLabel sterilizatedLabel;
+public class CatGUI {
+    public JTextField breedTextField;
+    public JRadioButton yesRadioButton;
+    public JRadioButton noRadioButton;
+    public JLabel breedLabel;
+    public JLabel sterilizatedLabel;
     public JPanel catPanel;
 
     private void createUIComponents() {
