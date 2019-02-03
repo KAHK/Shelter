@@ -88,6 +88,7 @@ public class AnimalsLogic{
         SimpleDateFormat admDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String admString = admDateFormat.format(animal.getAdmissionDate());
 
+        baseAnimalGUI.speciesNameLabel.setText(animal.getClassIdentifier());
         baseAnimalGUI.animalIDLabel.setText(animal.getID().toString());
         baseAnimalGUI.nameTextField.setText(animal.getName());
         baseAnimalGUI.admDateTextField.setText(admString);

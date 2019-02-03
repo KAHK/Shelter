@@ -20,4 +20,5 @@ public class BaseAnimalGUI {
     public JLabel sexLabel;
     public JLabel admissionDateLabel;
     public JLabel otherLabel;
+    public JLabel speciesNameLabel;
 }

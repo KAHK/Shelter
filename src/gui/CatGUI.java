@@ -9,8 +9,4 @@ public class CatGUI {
     public JLabel breedLabel;
     public JLabel sterilizatedLabel;
     public JPanel catPanel;
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }
